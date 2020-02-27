@@ -1,4 +1,4 @@
-WebApiTest
+## WebApiTest
 
 Решение состоит из 4 компонентов:
 
@@ -32,7 +32,9 @@ Initial Catalog=WebApiTest;Integrated Security=SSPI;" providerName="System.Data.
 
 Для создания БД был использован подход CodeFirst. При работе с Code First требуется определения ключа элемента для создания первичного ключа в таблице в БД. По умолчанию при генерации БД Entity Framework в качестве первичных ключей будет рассматривать свойства с именами ID.
 БД состоит из двух таблиц Interval и LogInterval
+
 Interval
+
 	ID (PK, int, not null) – первичный ключ
 	DateBegin (DateTime, not null) – начальная дата
 	EndDate (DateTime, not null) – конечная дата
