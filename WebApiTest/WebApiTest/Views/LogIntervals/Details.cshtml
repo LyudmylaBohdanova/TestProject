@@ -1,0 +1,67 @@
+﻿@model DLL.Models.LogInterval
+
+@{
+    ViewBag.Title = "Details";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>LogInterval</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.ID)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.ID)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.DateChange)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.DateChange)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.TypeChange)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.TypeChange)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Interval_ID)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Interval_ID)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.BeginDate)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.BeginDate)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.EndDate)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.EndDate)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.ID }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>

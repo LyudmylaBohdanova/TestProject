@@ -1,0 +1,53 @@
+﻿@model IEnumerable<DLL.Models.LogInterval>
+
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Index</h2>
+
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.DateChange)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.TypeChange)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Interval_ID)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.BeginDate)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.EndDate)
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.DateChange)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.TypeChange)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Interval_ID)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.BeginDate)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.EndDate)
+        </td>
+        <td>
+            @Html.ActionLink("Details", "Details", new { id = item.ID })
+        </td>
+    </tr>
+}
+
+</table>
